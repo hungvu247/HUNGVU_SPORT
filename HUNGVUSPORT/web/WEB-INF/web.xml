@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <filter>
+        <filter-name>LoginFilter</filter-name>
+        <filter-class>filter.LoginFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <url-pattern>/statistic</url-pattern>
+        <url-pattern>/menu</url-pattern>
+        <url-pattern>/monthlyrevenue </url-pattern>
+        <url-pattern>/manageruser</url-pattern>
+        <url-pattern>/managerproduct</url-pattern>
+        <url-pattern>/AddCategory.jsp</url-pattern>
+        <url-pattern>/AddProduct.jsp</url-pattern>
+        <url-pattern>/Allproduct.jsp</url-pattern>
+        <url-pattern>/Changepass.jsp</url-pattern>
+        <url-pattern>/Checkout.jsp</url-pattern>
+        <url-pattern>/HoaDon.jsp</url-pattern>
+        <url-pattern>/ListCart.jsp</url-pattern>
+        <url-pattern>/ListUser.jsp</url-pattern> 
+        <url-pattern>/Manager.jsp</url-pattern>
+        <url-pattern>/Managermycart.jsp</url-pattern>
+        <url-pattern>/Menu.jsp</url-pattern>
+        <url-pattern>/Monthlyrevenue.jsp</url-pattern>
+        <url-pattern>/MyAcount.jsp</url-pattern>
+        <url-pattern>/MyCart.jsp</url-pattern>
+     
+        <url-pattern>/Statistic.jsp</url-pattern>
+        <url-pattern>/UpdateInfoByUser.jsp</url-pattern>
+        <url-pattern>/search.jsp</url-pattern>
+        <url-pattern>/single-product.jsp</url-pattern>
+         <url-pattern>/login.jsp</url-pattern>
+
+        
+
+    </filter-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
